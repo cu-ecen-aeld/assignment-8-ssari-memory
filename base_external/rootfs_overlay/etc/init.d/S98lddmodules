@@ -92,9 +92,11 @@ case "$1" in
         load_scull_driver
         load_faulty_driver
         load_hello_module
+		aesdchar_load
         ;;
     stop)
         unload_modules
+		aesdchar_unload
         ;;
     *)
         echo "Usage: $0 {start|stop}"
